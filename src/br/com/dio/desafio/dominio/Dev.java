@@ -26,7 +26,7 @@ public class Dev {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudoInscritos.remove(conteudo.get());
         }else {
-            System.err.println("Você nãa está matriculado em nenhum conteúdo! ");
+            System.err.println("Você não está matriculado em nenhum conteúdo! ");
         }
     }
 
@@ -72,5 +72,14 @@ public class Dev {
     @Override
     public int hashCode() {
         return Objects.hash(nome, conteudoInscritos, conteudosConcluidos);
+    }
+
+    @Override
+    public String toString() {
+        return "Dev{" +
+                "nome='" + nome + '\'' +
+                ", conteudoInscritos=" + conteudoInscritos +
+                ", conteudosConcluidos=" + conteudosConcluidos +
+                '}';
     }
 }
